@@ -265,8 +265,10 @@ export function DocLayout() {
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="size-8">
             {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </Button>
-          <Button variant="ghost" size="icon" className="size-8">
-            <Github className="size-4" />
+          <Button variant="ghost" size="icon" className="size-8" asChild>
+            <a href="https://github.com/bagas-nirwan/ExperimentalUiFigma" target="_blank" rel="noopener noreferrer">
+              <Github className="size-4" />
+            </a>
           </Button>
         </div>
       </header>
